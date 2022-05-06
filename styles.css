@@ -4,11 +4,11 @@
   --color-AlmostBlack: hsl(0, 0%, 8%);
   --color-White: hsl(0, 0%, 100%);
   --color-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-  0 12.5px 10px rgba(0, 0, 0, 0.06),
-  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-  0 100px 80px rgba(0, 0, 0, 0.12);
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
 }
 
 *, *::after, ::before {
@@ -49,29 +49,27 @@ form {
   display: flex;
 }
 
-ul{
+ul {
   list-style-type: none;
 }
 
-li{
+li {
   margin: 1rem;
 }
 
-span{
-  margin-left:0.7rem;
+span {
+  margin-left: 0.7rem;
   color: var(--color-MediumGray);
   font-weight: 500;
   font-size: 15px;
 }
 
-
-
 .mobile-card-img {
   width: 100%;
 }
 
-.desktop-card-img{
-display: none;
+.desktop-card-img {
+  display: none;
 }
 
 .card-heading {
@@ -103,7 +101,7 @@ display: none;
   background-color: var(--color-AlmostBlack);
 }
 
- .bottom-logo {
+.bottom-logo {
   padding-top: 2.5rem;
   width: 100%;
   display: flex;
@@ -115,300 +113,300 @@ display: none;
   width: 60px;
 }
 
-
-
 .sidebar {
   position: fixed;
   top: 0;
   right: 0;
   left: 132px;
-  max-width:100vh;
-   height: 100vh;
+  max-width: 100vh;
+  height: 100vh;
   background: var(--color-White);
   grid-template-rows: auto 1fr auto;
   row-gap: 1rem;
   box-shadow: var(--clr-red-dark);
   transition: all 0.3s linear;
   transform: translate(100%);
-
 }
 
 .show-sidebar {
   transform: translate(0);
 }
 
-
-
-div.sidebar-header{
+div.sidebar-header {
   display: flex;
   max-width: 100%;
- height: 10vh;
-justify-content: flex-end;
+  height: 10vh;
+  justify-content: flex-end;
   padding: 0.5rem 0.5rem;
-align-items: center;
-margin: 0.6rem;
+  align-items: center;
+  margin: 0.6rem;
 }
 
-
-.dropdown-content1, .dropdown-content2{
+.dropdown-content1, .dropdown-content2 {
   margin: 1.2rem;
-display: none;
+  display: none;
 }
 
-.show-dropdown{
+.show-dropdown {
   display: contents;
 }
 
-.dropdown-1{
+.dropdown-1 {
   padding-bottom: 1rem;
 }
 
-.Features-btn:hover{
+.Features-btn:hover {
   cursor: pointer;
 }
 
-.Company-btn:hover{
+.Company-btn:hover {
   cursor: pointer;
 }
 
-.login{
+.login {
   padding-top: 0.5rem;
-      text-align: -webkit-center;
-      align-items: center;
-      color: var(--color-MediumGray);
-      font-weight: 500;
-      font-size: 15px;
+  text-align: -webkit-center;
+  align-items: center;
+  color: var(--color-MediumGray);
+  font-weight: 500;
+  font-size: 15px;
 }
 
-.register{
-
-  border: 2px solid  var(--color-MediumGray);
+.register {
+  border: 2px solid var(--color-MediumGray);
   border-radius: 12px;
   padding: 0.6rem 2rem;
-width: 80%;
-
+  width: 80%;
 }
 
-.arrow, .arrow-2{
-margin-left: 0.2rem;
+.arrow, .arrow-2 {
+  margin-left: 0.2rem;
   transition: all 0.3s linear;
 }
 
-.toggle-arrow{
-    transition: all 0.3s linear;
-  transform:rotate(-180deg);
+.toggle-arrow {
+  transition: all 0.3s linear;
+  transform: rotate(-180deg);
 }
 
-.side2{
+.side2 {
   display: none;
 }
-.attribution{
+
+.attribution {
   margin-top: 4rem;
 }
+
 @media screen and (width: 768px) {
+
+
+nav{
+width: 100%;
+}
+.container{
+  width: 690px;
+}
+  .card{
+    width: 515px;
+    margin: 0 auto;
+  }
+
+
   .sidebar {
     position: fixed;
     top: 0;
     right: 0;
-    left: 251px;
-    max-width:89vh;
-     height: 100vh;
+    left: 330px;
+    max-width: 89vh;
+    height: 100vh;
     background: var(--color-White);
     grid-template-rows: auto 1fr auto;
     row-gap: 1rem;
     box-shadow: var(--clr-red-dark);
     transition: all 0.3s linear;
     transform: translate(100%);
-
   }
 
-  .desktop-card-img{
-  display: none;
+div.sidebar-header{
+  max-width: 89%
+}
+
+.mobile-card-img {
+  width: 100%;
+}
+
+  .desktop-card-img {
+    display: none;
   }
 
   .show-sidebar {
     transform: translate(0);
   }
 
-.sidebar-container{
-  margin-left: 2rem;
-}
+  .sidebar-container {
+    margin-left: 2rem;
+  }
 }
 
-@media screen and (min-width: 1024px){
-
+@media screen and (min-width: 1024px) {
 
   nav {
     align-items: center;
     display: flex;
-
     height: 10vh;
     margin: auto;
-
     margin-bottom: 2rem;
   }
 
-ul{
-  align-items: center;
-}
+  ul {
+    align-items: center;
+  }
 
-span:hover{
-  cursor: pointer;
-  color: black;
-}
+  span:hover {
+    cursor: pointer;
+    color: black;
+  }
 
-.Features-btn{
-  margin-right: 1rem;
-}
-.dropdown-content{
-  position: absolute;
-  margin: 1rem;
-  background-color: var(--color-White);
-  border-radius: 10px;
-  box-shadow: var(--color-shadow);
+  .Features-btn {
+    margin-right: 1rem;
+  }
 
-}
-
-.dropdown-content-ul{
-  position: absolute;
-  left: -75px;
-  margin: 1rem;
-  background-color: var(--color-White);
-  border-radius: 10px;
-  box-shadow: var(--color-shadow);
-
-}
-.bottom-list ul{
-  display: flex;
-
-}
-
-.login ul{
-  display: flex;
-}
-
-.container{
-  min-width: 1270px;
-}
-
-.card{
-width: 1040px;
-display: flex;
-column-gap: 184px;
-margin: 0 auto;
-}
-
-
-.content{
-  grid-gap: 22px;
-  display: grid;
-  order: -1;
-  margin: auto;
-}
-
-
-.mobile-card-img{
-  display: none;
-}
-.desktop-card-img{
-  display: block;
-  width: 370px;
-}
-
- .card-heading{
-  font-size: 4.6em;
-  text-align: left;
-}
-.card-paragraph{
-  text-align: left;
-  font-size: 1.1rem;
-}
-
-
-.client-logo{
-  width: 80px;
-}
-.button{
-  justify-content: flex-start;
-}
-
-.btn{
-  width: 150px;
-  margin: 0;
-}
-.btn:hover{
-  cursor: pointer;
-  color: var(--color-AlmostBlack);
-  background-color: inherit;
-  border: 1px solid var(--color-AlmostBlack);
-}
-
-
-
-.menu{
-  display: none;
-}
-
-
-
-.sidebar {
+  .dropdown-content {
     position: absolute;
-      background-color: inherit;
-     top: 13px;
-     left: -520px;
-      height: 10vh;
+    margin: 1rem;
+    background-color: var(--color-White);
+    border-radius: 10px;
+    box-shadow: var(--color-shadow);
+  }
+
+  .dropdown-content-ul {
+    position: absolute;
+    left: -75px;
+    margin: 1rem;
+    background-color: var(--color-White);
+    border-radius: 10px;
+    box-shadow: var(--color-shadow);
+  }
+
+  .bottom-list ul {
+    display: flex;
+  }
+
+  .login ul {
+    display: flex;
+  }
+
+  .container {
+    width: 1285px;
+  }
+
+  .card {
+    width: 1101px;
+    display: flex;
+    column-gap: 233px;
+    margin: 0 auto;
+  }
+
+  .content {
+    grid-gap: 22px;
+    display: grid;
+    order: -1;
+    margin: auto;
+  }
+
+  .mobile-card-img {
+    display: none;
+  }
+
+  .desktop-card-img {
+    display: block;
+    width: 370px;
+  }
+
+  .card-heading {
+    font-size: 4.6em;
+    text-align: left;
+  }
+
+  .card-paragraph {
+    text-align: left;
+    font-size: 1.1rem;
+  }
+
+  .client-logo {
+    width: 80px;
+  }
+
+  .button {
+    justify-content: flex-start;
+  }
+
+  .btn {
+    width: 150px;
+    margin: 0;
+  }
+
+  .btn:hover {
+    cursor: pointer;
+    color: var(--color-AlmostBlack);
+    background-color: inherit;
+    border: 1px solid var(--color-AlmostBlack);
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .sidebar {
+    position: absolute;
+    background-color: inherit;
+    top: 13px;
+    left: -502px;
+    height: 10vh;
     box-shadow: var(--clr-red-dark);
     transition: all 0.3s linear;
-
-
   }
 
-.dropdown1, .dropdown2{
-  margin: 0;
-  padding: 0;
+  .dropdown1, .dropdown2 {
+    margin: 0;
+    padding: 0;
+  }
 
-}
-
-
-  div.sidebar-header{
+  div.sidebar-header {
     display: none;
   }
 
-  .sidebar-container{
+  .sidebar-container {
     display: flex;
-        align-items: baseline;
-
+    align-items: baseline;
   }
 
-
-
-
-  .side1{
+  .side1 {
     display: none;
   }
 
-  .side2{
+  .side2 {
     display: flex;
-
   }
 
-.login{
-padding: 0;
-}
-
-.register{
-  padding: 0.5rem 1rem;
-}
-
-}
-
-@media screen and (min-width: 1440px){
-  .container{
-    width: 1402px;
+  .login {
+    padding: 0;
   }
 
-  .sidebar{
+  .register {
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (width: 1440px) {
+
+  .container {
+  min-width: 1400px;
+  }
+
+  .sidebar {
     top: 14px;
-    left: -526px;
+    left: -499px;
   }
+
 }
